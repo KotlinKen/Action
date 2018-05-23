@@ -4,11 +4,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.kh.action.model.vo.Person;
 
@@ -43,6 +45,15 @@ public class TestELServlet extends HttpServlet {
 		items.add(new String("molten 농구공"));
 		
 		request.setAttribute("items", items);
+		//session/application 스코프에 속성지정
+		HttpSession session = request.getSession();
+		session.setAttribute("book", "나미야 잡화점의 기적");
+		session.setAttribute("coffee", "하와이 코나");
+		ServletContext application = request.getServletContext();
+		
+		
+		application.setAttribute("movie", "카모메식당");
+		
 		
 		request.getRequestDispatcher("/el/01_el.jsp").forward(request, response);
 	}
