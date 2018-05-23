@@ -28,5 +28,7 @@
 	
 	
 	web.xml에 선언하는 컨텍스트 파라미터 : 전역에서 사용할 변수지정 
+	
+	컨텍스트 파라미터 email : ${initParam.email }
 </body>
 </html>
