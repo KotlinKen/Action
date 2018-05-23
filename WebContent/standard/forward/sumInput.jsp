@@ -13,6 +13,7 @@
 <form action="sumCalc.jsp">
 	첫번째 수(작은수) : <input type="number" name="firstNum" id="" />
 	두번째 수(큰수) : <input type="number" name="secondNum" id="" />
+	<button type="submit">서밋</button>
 
 </form>
 </body>
