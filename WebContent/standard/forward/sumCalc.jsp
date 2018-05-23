@@ -14,4 +14,5 @@
 	
 	request.setAttribute("total", total);
 %>
+<script> alert("hello 난 sumCalc.jsp")</script>
 <jsp:forward page="sumView.jsp" />
