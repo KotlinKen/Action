@@ -30,5 +30,57 @@
 	web.xml에 선언하는 컨텍스트 파라미터 : 전역에서 사용할 변수지정 
 	
 	컨텍스트 파라미터 email : ${initParam.email }
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<hr />
+	
+	
+	<h2>header</h2>
+	
+	<p>request.getHeader("host")와 동일함.</p>
+	키값의 특수문자가 있는 경우, 도트연산자 사용불가. <br />
+	request.getHeaderNames()에 있는 키값만 사용가능. <br />
+	
+	 
+	
+	host : ${header.host } <br />
+	user-agent : ${header.user-agent } <br /> 
+	user-agent : ${header["user-agent"] } <br /> 
+	method : ${header.method } <br />
+	method : ${header["method"] } <br />
+	
+	<h3>기타 request객체의 메소드 접근</h3>	
+	method : <%= request.getMethod() %>
+	method : ${pageContext.request.method }
+	전체야 나와라 <%= request.getHeaderNames()  %>
+	
+	<h3>기타 request객체의 메소드 접근</h3>	
+	<p>
+		pageContext가 가진 접근자
+		<ul>
+			<li>getErrorDate()</li>
+			<li>getPage()</li>
+			<li>getReqeust()</li>
+			<li>getResponse()</li>
+			<li>getServletConfig()</li>
+			<li>getServletContext()</li>
+			<li>getSession()</li>
+		</ul>
+	</p>	
+	
+	
+	
 </body>
 </html>
