@@ -14,7 +14,7 @@ public class Person {
 		this.gender = gender;
 		this.age = age;
 	}
-	public String getname() {
+	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
