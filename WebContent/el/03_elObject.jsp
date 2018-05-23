@@ -22,6 +22,11 @@
 	없는쿠키 : ${cookie.nonexist.value }
 
 	<h2>컨텍스트 초기화 파라미터 : initParam</h2>	
-	<p>컨텍스트 파라미터</p>
+	<p>컨텍스트 파라미터에 전역에서 사용할 변수 지정.</p>
+	<br />
+	servlet태그에 init-param이 아님.
+	
+	
+	web.xml에 선언하는 컨텍스트 파라미터 : 전역에서 사용할 변수지정 
 </body>
 </html>
