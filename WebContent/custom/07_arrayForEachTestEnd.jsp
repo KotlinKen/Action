@@ -17,10 +17,8 @@
 		<c:forEach var ="f" items="${requestScope.friends}">
 			<li>${f}</li>
 		</c:forEach>
-	
-	
 	</ol>
-
+	<h2>fn:split으로 생성된 배열출력</h2>
 
 </body>
 </html>
