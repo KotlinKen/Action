@@ -9,8 +9,9 @@
 </head>
 
 <body>
-	<jsp:useBean id="person" class="com.kh.action.model.vo.Person">
-		<jsp:getProperty name ="person" property="*" param="name" />
-	</jsp:useBean>
+<jsp:useBean id ="person" class="com.kh.action.model.vo.Person" scope="request"></jsp:useBean>
+성명 : <jsp:getProperty property ="name" name ="person" /> <br />
+성별 : <jsp:getProperty property ="gender" name ="person" /><br />
+나이 : <jsp:getProperty property ="age" name ="person" /><br />
 </body>
 </html>

@@ -7,8 +7,8 @@
 <title> </title>
 
 </head>
-
 <body>
+${person } 
 
 </body>
 </html>
