@@ -7,6 +7,6 @@
     
 
 <c:set var="friends" scope="request">김률민,김회진,김혜린,김영중,김효정</c:set>
-<c:set var="friendsWithMultipleDelimiter" scope="request">김률민,김회진,김혜린,김영중,김효정</c:set>
+<c:set var="friendsWithMultipleDelimiter" scope="request">김률민,김회진/김혜린.김영중,김효정</c:set>
 
 <jsp:forward page="08_forTokensTestEnd.jsp" />
